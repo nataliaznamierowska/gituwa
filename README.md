@@ -1,1 +1,1 @@
-# gituwa
+# Projekt JS Domowy budżet
