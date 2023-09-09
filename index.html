@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domowy budżet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="image container">
-            <img
-                src="https://media.istockphoto.com/id/1392303722/pl/zdj%C4%99cie/koncepcja-bud%C5%BCetu-na-nowy-rok.jpg?s=612x612&w=0&k=20&c=8N8VuPucSdr34OlHBi-HVriP5FjbGpljeSHbc6H3yQA=">
-            <div class="container">
-                <h1>Domowy budżet</h1>
+      <div class="container">
+        <h1 class="main-heading">Domowy budżet</h1>
 
-                <main class="converter">
-                    <h2>Przychody</h2>
-                    <form id="income-form">
-                        Nazwa: <input type="text" id="income-name">
-                        Kwota: <input type="number" id="income-amount" step="0.01">
-                        <button id="add-income-button">Dodaj</button>
-                    </form>
+        <main class="converter">
+          <h2 class="sub-heading">Przychody</h2>
+          <form class="income-form">
+            Nazwa: <input type="text" class="income-name" /> Kwota:
+            <input type="number" class="income-amount" step="0.01" />
+            <button class="add-income-button">Dodaj</button>
+          </form>
 
-                    <h2>Wydatki</h2>
-                    <form id="expense-form">
-                        Nazwa: <input type="text" id="expense-name">
-                        Kwota: <input type="number" id="expense-amount" step="0.01">
-                        <button id="add-income-button">Dodaj</button>
-                    </form>
-                </main>
+          <h2 class="sub-heading">Wydatki</h2>
+          <form class="expense-form">
+            Nazwa: <input type="text" class="expense-name" /> Kwota:
+            <input type="number" class="expense-amount" step="0.01" />
+            <button class="add-expense-button">Dodaj</button>
+          </form>
+        </main>
 
-                <h2>Bilans</h2>
-                <p id="available-balance"></p>
+        <h2 class="sub-heading">Bilans</h2>
+        <p class="available-balance"></p>
 
-                <h2>Lista przychodów</h2>
-                <ul id="income-list"></ul>
+        <h2 class="sub-heading">Lista przychodów</h2>
+        <ul class="income-list"></ul>
 
-                <p id="total-income"></p>
+        <p class="total-income"></p>
 
-                <h2>Lista wydatków</h2>
-                <ul id="expense-list"></ul>
-                <p id="total-expense"></p>
-
-            </div>
-        </div>
+        <h2 class="sub-heading">Lista wydatków</h2>
+        <ul class="expense-list"></ul>
+        <p class="total-expense"></p>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
